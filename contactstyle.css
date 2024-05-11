@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition:  1s;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 26PX;
+    font-weight: 600;
+    color: #fff;
+}
+nav .logo img{
+    width: 150px;
+    margin-right:10px ;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #dfdfea;
+    font-weight: 550;
+    margin-left: 35px;
+}
+nav:hover{
+    background: rgba(51, 51, 51,0.5);
+    color: #fff;
+    
+}
+nav:hover ul li a{
+    color: #fff;
+}
+nav:hover .logo{
+    color: #333;
+
+}
+
+nav ul li a:hover{
+    color: whitesmoke;
+}
+body{
+    font-family: 'poppins';
+    background: linear-gradient(#2c6e49,#dfdfea);
+}
+.contact-container{
+    height: 100vh;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #dfdfea;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background: #dfdfea;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius:50px ;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #de6449;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color:#fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(270deg,#de6449,#de6449);
+    cursor: pointer;
+}
+.contact-right img{
+    width: 400px;
+}
+
+@media(max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+.footer{
+    width: 100%;
+    text-align:center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #011627;
+}
+.icons a{
+    text-decoration: none;
+    color: currentColor;
+    margin: 10px;
+    color:#011627 ;
+}
+.footer p{
+   color: #011627;
+   font-weight: 600;
+}
